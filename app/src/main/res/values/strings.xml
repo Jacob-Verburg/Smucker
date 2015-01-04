@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Wine-O</string>
+    <string name="hello_top_menu">Hello top menu!</string>
+    <string name="data_collection_temp_text">woo temp data collection!</string>
+    <string name="recommend_temp_text">woo temp recommend!</string>
+    <string name="trending_temp_text">woo temp trending!</string>
+    <string name="drinking_history_temp_text">woo temp drinking history!</string>
+    <string name="action_settings">Settings</string>
+    <string name="data_collection">What Am I Drinking</string>
+    <string name="recommend_wine">Recommend me a wine</string>
+    <string name="trending_wine">Trending Wine</string>
+    <string name="drinking_history">Drink History</string>
+    <string name="title_activity_questionnaire">Questionnaire</string>
+    <string name="title_activity_recommend_wine">RecommendWine</string>
+    <string name="title_activity_trending_wine">TrendingWine</string>
+    <string name="title_activity_drinking_history">DrinkingHistory</string>
+
+</resources>

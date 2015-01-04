@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:id="@+id/MainPage">
+
+    <TextView android:text="@string/hello_top_menu" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/data_collection"
+        android:id="@+id/dataCollectionButton"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="gotoDataCollection" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/recommend_wine"
+        android:id="@+id/recommendButton"
+        android:layout_alignTop="@+id/dataCollectionButton"
+        android:layout_toRightOf="@+id/dataCollectionButton"
+        android:layout_toEndOf="@+id/dataCollectionButton"
+        android:onClick="gotoRecommendWine" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trending_wine"
+        android:id="@+id/trendingButton"
+        android:layout_below="@+id/dataCollectionButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="gotoTrendingWine" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/drinking_history"
+        android:id="@+id/drinkHistoryButton"
+        android:layout_alignTop="@+id/trendingButton"
+        android:layout_alignRight="@+id/recommendButton"
+        android:layout_alignEnd="@+id/recommendButton"
+        android:onClick="gotoDrinkingHistory" />
+
+</RelativeLayout>
