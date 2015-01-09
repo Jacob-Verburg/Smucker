@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
+import android.widget.Spinner;
 
 
 public class DataCollection extends ActionBarActivity {
@@ -15,14 +15,14 @@ public class DataCollection extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_data_collection);
 
-        // Get a reference to the AutoCompleteTextView in the layout
-        AutoCompleteTextView textView = (AutoCompleteTextView) findViewById(R.id.years_dropdown);
-// Get the string array
-        String[] years = getResources().getStringArray(R.array.years_array);
-// Create the adapter and set it to the AutoCompleteTextView
-        ArrayAdapter<String> adapter =
-                new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, years);
-        textView.setAdapter(adapter);
+
+        Spinner dropdown = (Spinner)findViewById(R.id.spinner1);
+        String[] items = getResources().getStringArray(R.array.years_array);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, items);
+        dropdown.setAdapter(adapter);
+
+
+
 
 
     }
